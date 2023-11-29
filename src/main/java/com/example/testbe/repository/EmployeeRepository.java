@@ -1,2 +1,9 @@
-package com.example.testbe.repository;public interface EmployeeRepository {
+package com.example.testbe.repository;
+
+import com.example.testbe.model.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee,Long> {
 }
